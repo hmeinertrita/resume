@@ -7,7 +7,12 @@ const skills = [
     {
         name: 'Unity',
         lang: false,
-        proficiency: 4.5
+        proficiency: 5
+    },
+    {
+        name: 'Godot',
+        lang: false,
+        proficiency: 3.5
     },
     {
         name: 'Git',
@@ -55,7 +60,7 @@ const skills = [
         proficiency: 3
     },
     {
-        name: 'Javascript',
+        name: 'Javascript/Typescript',
         lang: true,
         proficiency: 5
     },

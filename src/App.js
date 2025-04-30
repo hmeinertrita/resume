@@ -7,6 +7,7 @@ import Work from './components/Work';
 import Personal from './components/Personal';
 import Education from './components/Education';
 import Footer from './components/Footer';
+import { LinkCMYK } from './components/revamp/CMYK';
 
 function App() {
   return (
