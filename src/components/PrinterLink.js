@@ -5,10 +5,10 @@ export default ({url, prependIcon, appendIcon, text, className}) => {
     const cleanUrl = url.replace('https://', '').replace('www.', '').replace('mailto:', '')
     return (
         <a href={url} className={className}>
-            <Icon icon={prependIcon}/>
+            {prependIcon && <Icon icon={prependIcon}/>}
             <span className={'printer--show'}>{cleanUrl}</span>
             <span className={'printer--hide'}>{text || cleanUrl}</span>
-            <Icon icon={appendIcon}/>
+            {appendIcon && <Icon icon={appendIcon}/>}
         </a>
     )
 }

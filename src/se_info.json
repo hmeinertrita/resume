@@ -1,0 +1,158 @@
+{
+	"about": "Im a passionate Software Engineer specializing in front-end development with experience across the full software stack. I thrive in both collaborative, cross-functional teams as well as independent settings, with a strong grasp of the development lifecycle and agile methodologies. My priority is delivering quality, user-focused solutions and fresh, innovative experiences. I'm always eager to expand my skills and learn new technologies.",
+	"experience": [
+		{
+			"company": "mPulse",
+			"location": "Tuscon, AZ",
+			"title": "Software Engineer",
+			"contact": "Zachary Elinson",
+			"contactEmail": "zachary.elinson@mpulse.com",
+			"contactTitle": "Software Engineer Team Lead, mPulse",
+			"items": [
+				"UI engineer for mPulse's portals division. I built and maintained responsive web and mobile UIs personalized for dozens of the largest healthcare clients in the US. Worked on project teams to develop new applications and features."
+			]
+		},
+		{
+			"company": "Myplanet",
+			"location": "Toronto, ON",
+			"title": "Software Developer",
+			"contact": "Yashar Rassoulli",
+			"contactTitle": "CTO & Co-Founder, Myplanet",
+			"contactEmail": "yashar@myplanet.com",
+			"items": [
+				"Front-end lead on a project for a national telecom company developing a high profile medical web application. Worked onsite at client's headquarters as primary liaison for front-end implementation.",
+				"DevOps lead launching a new eCommerce website. Set up and maintained a CD pipeline using GitHub and AWS. Researched and integrated headless eCommerce platforms."
+			]
+		},
+		{
+			"company": "Psyop",
+			"location": "Los Angeles, CA",
+			"title": "Data Wrangler & AR Developer",
+			"contact": "Matthew Seymour",
+			"contactTitle": "GM/EP, Free Range Games",
+			"contactEmail": "matthew@freerangegames.com",
+			"items": [
+				"Worked in the Real-time Interactive group at renowned commercial & game content studio Psyop's LA division.",
+				"Data wrangler for mocap data on a AAA video game project. Attended mocap shoots and processed all data for use in animation, client review, and Unreal development. Solo developer on various AR proof-of-concepts using a variety of technologies including Unity, 8th Wall, and ARKit."
+			]
+		}
+	],
+	"skills": [
+		{
+			"name": "Unreal",
+			"lang": false,
+			"proficiency": 3.5
+		},
+		{
+			"name": "Unity",
+			"lang": false,
+			"proficiency": 5
+		},
+		{
+			"name": "Godot",
+			"lang": false,
+			"proficiency": 3.5
+		},
+		{
+			"name": "Git",
+			"lang": false,
+			"proficiency": 4.5
+		},
+		{
+			"name": "SQL",
+			"lang": false,
+			"proficiency": 2.5
+		},
+		{
+			"name": "HTML 5 & CSS",
+			"lang": false,
+			"proficiency": 5
+		},
+		{
+			"name": "Node.js",
+			"lang": false,
+			"proficiency": 5
+		},
+		{
+			"name": "React & React Native",
+			"lang": false,
+			"proficiency": 5
+		},
+		{
+			"name": "AWS",
+			"lang": false,
+			"proficiency": 3
+		},
+		{
+			"name": "C++",
+			"lang": true,
+			"proficiency": 4
+		},
+		{
+			"name": "C#",
+			"lang": true,
+			"proficiency": 5
+		},
+		{
+			"name": "C",
+			"lang": true,
+			"proficiency": 3
+		},
+		{
+			"name": "Javascript/Typescript",
+			"lang": true,
+			"proficiency": 5
+		},
+		{
+			"name": "Python",
+			"lang": true,
+			"proficiency": 3.5
+		},
+		{
+			"name": "Ruby",
+			"lang": true,
+			"proficiency": 3
+		},
+		{
+			"name": "Java",
+			"lang": true,
+			"proficiency": 4
+		}
+	],
+	"personal": [
+		{
+			"name": "TETRA",
+			"link": "https://github.com/hmeinertrita/TETRA",
+			"demoLink": "https://hmeinertrita.github.io/TETRA/",
+			"description": "Audio visualizer dynamically animated purely with CSS. A proof of concept for doing nontrival math using only CSS.",
+			"technologies": ["CSS", "Web Audio API"]
+		},
+		{
+			"name": "time.claps",
+			"link": "https://github.com/hmeinertrita/time.claps",
+			"demoLink": "https://time-clap.glitch.me",
+			"description": "Web app used to display a synchronized countdown. Created to help coordinate certain activities with friends remotely, such as playing videos or syncing local audio recordings.",
+			"technologies": ["React", "express"]
+		},
+		{
+			"name": "ADALIN",
+			"link": "https://www.github.com/hmeinertrita/ADALIN",
+			"description": "Discord bot integrated with a Dialogflow agent and a wiki. Can answer freeform questions about the contents of the wiki through text or speech recognition.",
+			"technologies": ["Dialogflow", "Discord.js", "Google Speech API"]
+		},
+		{
+			"name": "ocean",
+			"link": "https://www.github.com/hmeinertrita/ocean",
+			"demoLink": "https://hmeinertrita.github.io/ocean/",
+			"description": "First-person audio visualizer made in Unity. Made with easily configurable settings to change the visuals to fit any song.",
+			"technologies": ["Unity"]
+		}
+	],
+	"education": {
+		"school": "Rochester Institute of Technology",
+		"location": "Rochester, NY",
+		"degree": "BS Software Engineering",
+		"minors": "Minored in Game Design & Development, Woman & Gender Studies",
+		"years": "August 2016 - May 2021"
+	}
+}

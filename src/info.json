@@ -1,0 +1,61 @@
+{
+	"about": "Im a passionate Software Engineer specializing in front-end development with experience across the full software stack. I thrive in both collaborative, cross-functional teams as well as independent settings, with a strong grasp of the development lifecycle and agile methodologies. My priority is delivering quality, user-focused solutions and fresh, innovative experiences. I'm always eager to expand my skills and learn new technologies.",
+	"experience": [
+		{
+			"company": "Tora-Con",
+			"location": "Rochester, NY",
+			"title": "Registration",
+			"items": [
+				"Volunteer helping to organize the annual Tora-Con, the largest anime/comic convention in upstate NY. I volunteered for each convention from 2016 to 2019.",
+				"From 2017 onwards, I was part of the registration team, where I helped handle advertising, vendor applications, attendance numbers, distributing badges, as well as handling all revenue from badge purchases. I was set to become the head of the registration team for 2020's Tora-Con, as the current head was graduating. However the pandemic cancelled Tora-Con that year."
+			]
+		},
+		{
+			"company": "The Beer Store",
+			"location": "Cobourg, ON",
+			"title": "Cashier & Restocker",
+			"items": [
+				"From 2015 to 2016, I had a summer job at The Beer Store. There I worked the till where I would take customer orders and fetch them from the cold storage in the back of the store. This was my first retail job and I learned the fundamentals of working in retail, such as customer service, handling unruly customers, and point of sale systems."
+			]
+		},
+		{
+			"company": "Cantina",
+			"location": "Rochester, NY",
+			"title": "Cashier & Food Prep",
+			"items": [
+				"Worked as a cashier and prep cook during my time at RIT. I worked at the point of sale during high activity times like the lunch and dinner rushes, where I learned how to work efficiently and quickly during high stress times.",
+				"I also worked in the back doing food prep and other odd jobs like restocking, cleaning, and dishwashing. There I learned the importance of being able to take direction, and prioritize many tasks to work as efficiently as I can."
+			]
+		}
+	],
+	"skills": [],
+	"personal": [
+		{
+			"name": "Myplanet",
+			"link": "https://github.com/hmeinertrita/TETRA",
+			"demoLink": "https://hmeinertrita.github.io/TETRA/",
+			"description": "Web developer and UI lead on a project for a Telus Health, developing a high profile medical web application. DevOps lead launching a new eCommerce website for a foreign client.",
+			"technologies": ["Software Developer"]
+		},
+		{
+			"name": "Psyop",
+			"link": "https://github.com/hmeinertrita/time.claps",
+			"demoLink": "https://time-clap.glitch.me",
+			"description": "Worked in the Real-time Interactive group where I handled mocap data on a AAA video game project. Attended mocap shoots and processed all data for use in-game animations. Solo developer on various AR/XR proof-of-concepts.",
+			"technologies": ["Data Wrangler, AR Developer"]
+		},
+		{
+			"name": "mPulse",
+			"link": "https://www.github.com/hmeinertrita/ADALIN",
+			"description": "UI engineer for mPulse's portals division. I built and maintained responsive web and mobile UIs personalized for dozens of the largest healthcare clients in the US. Worked on project teams to develop new applications and features.",
+			"technologies": ["Software Engineer"]
+		}
+	],
+	"education": {
+		"school": "Rochester Institute of Technology",
+		"location": "Rochester, NY",
+		"degree": "BS Software Engineering",
+		"minors": "Minored in Game Design & Development, Woman & Gender Studies",
+		"years": "August 2016 - May 2021"
+	}
+}

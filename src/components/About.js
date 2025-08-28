@@ -1,25 +1,31 @@
 import Icon from "./Icon"
 import PrinterLink from "./PrinterLink"
+import {useState} from "react"
+import INFO from '../info.json'
 
-const about = [
-    'I am Software Engineer dedicated to creating new and interesting experiences.',
-    'My goal is always to build something unique and exciting for anyone using what I make.',
-    'I\'ve worked with multidisciplinary teams as well as independently and I am comfortable with both.',
-    'I am committed to finishing tasks to a high standard, motivated and quick to learn new skills and technology, and to find creative solutions to problems.'
-].join(' ')
-
+const about = INFO.about
 // eslint-disable-next-line import/no-anonymous-default-export
-export default () => (
-    <div className={'about'}>
-        <div className={'about--contact-heading'}>
-            <h1 className={'about--heading'}>{'About Me'}</h1>
-            <div className={'about--contact'}>
-                <PrinterLink className={'about--contact-item'} url={'https://www.github.com/hmeinertrita'} text={'GitHub Repositories'} appendIcon={'github'}/>
-                <PrinterLink className={'about--contact-item'} url={'https://www.linkedin.com/in/hmeinertrita'} text={'LinkedIn Profile'} appendIcon={'linkedin'}/>
-                <PrinterLink className={'about--contact-item'} url={'mailto:hmeinertrita@gmail.com'} appendIcon={'mail-send'}/>
-                <div className={'about--contact-item'}><span>{'1-585-733-3463'}</span><Icon icon={'phone'}/></div>
+export default () => {
+    const [collapsed, setCollapsed] = useState(false)
+    return (
+        <div className={'about'}>
+            <div className={'about--contact-heading'}>
+                <button className={collapsed ? ' collapsed' : ''} onClick={() => {setCollapsed(!collapsed)}}>
+                    <h1 className={'about--heading'}>
+                        {'About Me'}
+                        <Icon icon={`arrow-${collapsed ? 'down' : 'up'}-s`} line/>
+                    </h1>
+                </button>
+                    <div className={'about--contact'}>
+                        <PrinterLink className={'about--contact-item'} url={'https://www.github.com/hmeinertrita'} text={'GitHub Repositories'} appendIcon={'github'}/>
+                        <PrinterLink className={'about--contact-item'} url={'https://www.linkedin.com/in/hmeinertrita'} text={'LinkedIn Profile'} appendIcon={'linkedin'}/>
+                        <PrinterLink className={'about--contact-item'} url={'mailto:hmeinertrita@gmail.com'} appendIcon={'mail-send'}/>
+                        <div className={'about--contact-item'}><span>{'1-585-733-3463'}</span><Icon icon={'phone'}/></div>
+                    </div>
+            </div>
+            <div className={`mobile-section${collapsed ? ' collapsed' : ''}`}>
+                <p className={'about--description'}>{about}</p>
             </div>
         </div>
-        <p className={'about--description'}>{about}</p>
-    </div>
-)
+    )
+}

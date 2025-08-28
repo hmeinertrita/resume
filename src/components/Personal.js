@@ -1,37 +1,13 @@
+import Icon from "./Icon"
 import PrinterLink from "./PrinterLink"
+import {useState} from "react"
+import INFO from "../info.json"
 
-const projects = [
-    {
-        name: 'TETRA',
-        link: 'https://github.com/hmeinertrita/TETRA',
-        demoLink: 'https://hmeinertrita.github.io/TETRA/',
-        description: 'Audio visualizer dynamically animated purely with CSS. A proof of concept for doing nontrival math using only CSS.',
-        technologies: ['CSS', 'Web Audio API']
-    },
-    {
-        name: 'time.claps',
-        link: 'https://github.com/hmeinertrita/time.claps',
-        demoLink: 'https://time-clap.glitch.me',
-        description: 'Web app used to display a synchronized countdown. Created to help coordinate certain activities with friends remotely, such as playing videos or syncing local audio recordings.',
-        technologies: ['React', 'express']
-    },
-    {
-        name: 'ADALIN',
-        link: 'https://www.github.com/hmeinertrita/ADALIN',
-        description: 'Discord bot integrated with a Dialogflow agent and a wiki. Can answer freeform questions about the contents of the wiki through text or speech recognition.',
-        technologies: ['Dialogflow', 'Discord.js', 'Google Speech API']
-    },
-    {
-        name: 'ocean',
-        link: 'https://www.github.com/hmeinertrita/ocean',
-        demoLink: 'https://hmeinertrita.github.io/ocean/',
-        description: 'First-person audio visualizer made in Unity. Made with easily configurable settings to change the visuals to fit any song.',
-        technologies: ['Unity']
-    },
-]
+const projects = INFO.personal
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
+    const [collapsed, setCollapsed] = useState(true)
     const projectComponents = projects.map((project, i) => {
         return <div key={i} className={'personal--project'}>
             <div className={'personal--repo-technologies'}>
@@ -46,7 +22,14 @@ export default () => {
         </div>
     })
     return <div className={'personal'}>
-        <h1 className={'personal--heading heading--body'}>{'Personal Projects'}</h1>
-        {projectComponents}
+        <button className={collapsed ? ' collapsed' : ''} onClick={() => {setCollapsed(!collapsed)}}>
+            <h1 className={'personal--heading heading--body'}>
+                {'Other Experience'}
+                <Icon icon={`arrow-${collapsed ? 'down' : 'up'}-s`} line/>
+            </h1>
+        </button>
+        <div className={`mobile-section${collapsed ? ' collapsed' : ''}`}>
+            {projectComponents}
+        </div>
     </div>
 }
