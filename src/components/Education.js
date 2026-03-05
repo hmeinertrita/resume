@@ -7,7 +7,7 @@ const education = INFO.education
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
     const [collapsed, setCollapsed] = useState(true)
-    return <div className={'education'}>
+    return <>
         <button className={collapsed ? ' collapsed' : ''} onClick={() => {setCollapsed(!collapsed)}}>
             <h1 className={'education--heading heading--body'}>
                 {'Education'}
@@ -20,5 +20,5 @@ export default () => {
             <div className={'education--school'}>{education.school}</div>
             <div className={'education--years'}>{education.years}</div>
         </div>
-    </div>
+    </>
 }

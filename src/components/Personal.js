@@ -21,15 +21,15 @@ export default () => {
             <p className={'personal--description'}>{project.description}</p>
         </div>
     })
-    return <div className={'personal'}>
+    return <>
         <button className={collapsed ? ' collapsed' : ''} onClick={() => {setCollapsed(!collapsed)}}>
             <h1 className={'personal--heading heading--body'}>
-                {'Other Experience'}
+                {'Projects'}
                 <Icon icon={`arrow-${collapsed ? 'down' : 'up'}-s`} line/>
             </h1>
         </button>
         <div className={`mobile-section${collapsed ? ' collapsed' : ''}`}>
             {projectComponents}
         </div>
-    </div>
+    </>
 }

@@ -3,7 +3,7 @@ import Page from './components/Page';
 import Name from './components/Name';
 import About from './components/About';
 import Skills from './components/Skills';
-import Work from './components/Work';
+import Info from './components/Info';
 import Personal from './components/Personal';
 import Education from './components/Education';
 import Footer from './components/Footer';
@@ -19,15 +19,7 @@ function App() {
         <div className={'left-column'}>
           <Skills />
         </div>
-        <div className={'info'}>
-          <div className={'info--left'}>
-            <Work />
-          </div>
-          <div className={'info--right'}>
-            <Education />
-            <Personal />
-          </div>
-        </div>
+        <Info/>
       </div>
       
       <div className={'about--contact mobile'}>

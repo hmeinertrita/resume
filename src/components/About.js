@@ -20,7 +20,7 @@ export default () => {
                         <PrinterLink className={'about--contact-item'} url={'https://www.github.com/hmeinertrita'} text={'GitHub Repositories'} appendIcon={'github'}/>
                         <PrinterLink className={'about--contact-item'} url={'https://www.linkedin.com/in/hmeinertrita'} text={'LinkedIn Profile'} appendIcon={'linkedin'}/>
                         <PrinterLink className={'about--contact-item'} url={'mailto:hmeinertrita@gmail.com'} appendIcon={'mail-send'}/>
-                        <div className={'about--contact-item'}><span>{'1-585-733-3463'}</span><Icon icon={'phone'}/></div>
+                        <div className={'about--contact-item'}><span>{'1-289-691-6220'}</span><Icon icon={'phone'}/></div>
                     </div>
             </div>
             <div className={`mobile-section${collapsed ? ' collapsed' : ''}`}>
